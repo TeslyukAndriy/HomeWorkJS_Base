@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-block{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+        }
+        .centrBlock{
+            margin: 0 auto;
+            padding: 5px;
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+		#block{
+			width: 200px;
+			height: 200px;
+			border: red;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-block">
+		<p>
+			Right top corner
+			<input type="range" id="rtr" min="0" max="200" value="0" oninput="getValue()">
+			<span id="ttr">0</span>
+		</p>
+		<p>
+			Left top corner
+			<input type="range" id="rtl" min="0" max="200" value="0" oninput="getValue()">
+			<span id="ttl">0</span>
+		</p>
+		<p>
+			Right bottom corner
+			<input type="range" id="rbr" min="0" max="200" value="0" oninput="getValue()">
+			<span id="tbr">0</span>
+		</p>
+		<p>
+			Left bottom corner
+			<input type="range" id="rbl" min="0" max="200" value="0" oninput="getValue()">
+			<span id="tbl">0</span>
+        </p>
+        <p>
+			Move Left
+			<input type="range" id="ml" min="0" max="200" value="0" oninput="getValue()">
+			<span id="ml1">0</span>
+		</p>
+		<p>
+			Move Top
+			<input type="range" id="mt" min="0" max="200" value="0" oninput="getValue()">
+			<span id="mt1">0</span>
+		</p>						
+    </div>
+    <div class="centrBlock">
+        <div id="block"></div>
+    </div>
+	
+
+
+
+    <!-- <script src="1part.js"></script> -->
+    <!-- <script src="2part.js"></script> -->
+    <!-- <script src="3part.js"></script> -->
+    <!-- <script src="4part.js"></script> -->
+    <!-- <script src="5part.js"></script> -->
+    <script src="6part.js"></script>
+
+</body>
+</html>
